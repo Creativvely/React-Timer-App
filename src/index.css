@@ -1,10 +1,7 @@
 /* reset and general styles */
 * {
-  margin: 0px;
-  padding: 0px;
-  /* outline-color: blue;
-  outline-style: solid;
-  outline-width: 2px; */
+  margin: 0rem;
+  padding: 0rem;
   outline: none;
   border: none;
   background-color: unset;
@@ -25,8 +22,8 @@ body {
 
 .app {
   width: 80vw;
-  max-width: 500px;
-  min-width: 350px;
+  max-width: 31.25rem;
+  min-width: 21.875rem;
   margin: auto;
 }
 
@@ -36,51 +33,51 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  border-radius: 10px;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.625rem;
   background-color: lightgray;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .timer-header h2 {
   display: flex;
   align-items: center;
-  gap: 0px 10px;
+  gap: 0rem 0.625rem;
   text-transform: capitalize;
 }
 h2 .stopwatch-icon {
-  font-size: 26px;
+  font-size: 1.625rem;
 }
 .timer-header > div {
   display: flex;
   align-items: center;
-  gap: 0px 10px;
+  gap: 0rem 0.625rem;
 }
 .timer-header > a {
-  font-size: 22px;
-  padding: 10px;
+  font-size: 1.375rem;
+  padding: 0.625rem;
   display: flex;
   place-items: center;
   background-color: rgb(236, 236, 236);
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 
 /* countdown timer styles */
 .timer {
   background-color: lightpink;
-  border-radius: 10px;
-  padding: 35px 30px;
+  border-radius: 0.625rem;
+  padding: 2.1875rem 1.875rem;
   width: 100%;
 }
 .timer-inputs {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
   width: 100%;
 }
 .colon-divider {
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: bold;
 }
 .timer-input {
@@ -89,19 +86,19 @@ h2 .stopwatch-icon {
   width: 31%;
 }
 .timer-input button {
-  font-size: 25px;
+  font-size: 1.5625rem;
 }
 .timer-input button > svg {
   fill: black;
 }
 .timer-input input {
   text-align: center;
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: 700;
 }
 .action-buttons {
   display: flex;
-  gap: 10px 10px;
+  gap: 0.625rem 0.625rem;
   width: fit-content;
   flex-wrap: wrap;
   align-items: center;
@@ -109,15 +106,15 @@ h2 .stopwatch-icon {
   margin: auto;
 }
 .action-buttons button {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
   display: inline-flex;
   align-items: center;
-  padding: 10px 18px;
+  padding: 0.625rem 1.125rem;
   background-color: black;
   color: white;
-  border-radius: 10px;
-  gap: 0px 10px;
+  border-radius: 0.625rem;
+  gap: 0rem 0.625rem;
 }
 
 
