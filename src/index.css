@@ -1,0 +1,135 @@
+/* reset and general styles */
+* {
+  margin: 0px;
+  padding: 0px;
+  /* outline-color: blue;
+  outline-style: solid;
+  outline-width: 2px; */
+  outline: none;
+  border: none;
+  background-color: unset;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.app {
+  width: 80vw;
+  max-width: 500px;
+  min-width: 350px;
+  margin: auto;
+}
+
+
+/* timer header styles */
+.timer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: lightgray;
+  margin-bottom: 20px;
+}
+.timer-header h2 {
+  display: flex;
+  align-items: center;
+  gap: 0px 10px;
+  text-transform: capitalize;
+}
+h2 .stopwatch-icon {
+  font-size: 26px;
+}
+.timer-header > div {
+  display: flex;
+  align-items: center;
+  gap: 0px 10px;
+}
+.timer-header > a {
+  font-size: 22px;
+  padding: 10px;
+  display: flex;
+  place-items: center;
+  background-color: rgb(236, 236, 236);
+  border-radius: 10px;
+}
+
+
+/* countdown timer styles */
+.timer {
+  background-color: lightpink;
+  border-radius: 10px;
+  padding: 35px 30px;
+  width: 100%;
+}
+.timer-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.colon-divider {
+  font-size: 64px;
+  font-weight: bold;
+}
+.timer-input {
+  display: flex;
+  flex-direction: column;
+  width: 31%;
+}
+.timer-input button {
+  font-size: 25px;
+}
+.timer-input button > svg {
+  fill: black;
+}
+.timer-input input {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+}
+.action-buttons {
+  display: flex;
+  gap: 10px 10px;
+  width: fit-content;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.action-buttons button {
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 18px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  gap: 0px 10px;
+}
+
+
+/* adding micro-interactions and ui-states for the timer-input buttons */
+/* and action-buttons */
+.timer-input button > svg:hover,
+.timer-input button > svg.running {
+  fill: rgb(107, 107, 107);
+}
+.timer-input button > svg.running {
+  pointer-events: none;
+}
+.action-buttons button:hover {
+  background-color: rgb(107, 107, 107);
+}
