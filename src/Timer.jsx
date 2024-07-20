@@ -17,7 +17,7 @@ function Timer( props ) {
                         onClick={ ()=>{ props.setHours( ( currentHours )=> currentHours + 1  ) } }/>
                 </button>
 
-                <input type="text" disabled value={props.hours}/>
+            <input type="text" disabled value={( props.hours < 10 ) ? `0${props.hours}` : props.hours }/>
 
                 <button>
                     <BsCaretDownFill className={( props.status != "reset" ) ? "running" : "" }
@@ -37,7 +37,7 @@ function Timer( props ) {
                         onClick={ ()=>{ props.setMinutes( ( currentMinutes )=> currentMinutes + 1  ) } }/>
                 </button>
 
-                <input type="text" disabled value={props.minutes}/>
+                <input type="text" disabled value={( props.minutes < 10 ) ? `0${props.minutes}` : props.minutes }/>
 
                 <button>
                     <BsCaretDownFill className={( props.status != "reset" ) ? "running" : "" }
@@ -57,7 +57,7 @@ function Timer( props ) {
                         onClick={ ()=>{ props.setSeconds( ( currentSeconds )=> currentSeconds + 1  ) } }/>
                 </button>
 
-                <input type="text" disabled value={props.seconds}/>
+                <input type="text" disabled value={( props.seconds < 10 ) ? `0${props.seconds}` : props.seconds }/>
 
                 <button>
                     <BsCaretDownFill className={( props.status != "reset" ) ? "running" : "" }
